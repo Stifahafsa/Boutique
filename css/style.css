@@ -1,0 +1,35 @@
+*{
+   
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+.card-img{
+    height: 150px;
+    width: 170px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+.card-img:hover{
+    cursor: pointer;
+    transform: rotateY(150deg);
+}
+
+.count{
+    counter-reset: Bijoux;
+}
+h5::before{
+counter-increment: Bijoux;
+content: "Bijoux : " counter(Bijoux) ;
+}
+span{
+    border: 1px solid #f7c66a;
+    background-color: #f7c66a;
+    color: #fff;
+    float: right;
+
+}
+
